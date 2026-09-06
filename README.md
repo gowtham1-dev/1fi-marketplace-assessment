@@ -1,16 +1,53 @@
-# React + Vite
+# 1Fi Marketplace Assessment
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A mobile-responsive React application built to integrate a dynamic "1Fi Marketplace" into the existing 1Fi App's Shop interface, fulfilling all core and evaluation criteria for the SDE internship assignment.
 
-Currently, two official plugins are available:
+🔗 **Live Demo:** [https://1fi-marketplace-assessment-gowtham.vercel.app/](https://1fi-marketplace-assessment-gowtham.vercel.app/)
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+---
 
-## React Compiler
+## 🚀 Tech Stack
+* **Frontend:** React.js, Tailwind CSS
+* **Build Tool:** Vite
+* **State Management:** React Hooks (`useState`, `useEffect`)
+* **Data Architecture:** Decoupled mock API service simulating real backend product retrieval
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+---
 
-## Expanding the ESLint configuration
+## 🎯 Assignment Implementation & Features
+* **UI/UX Consistency:** Replicated the exact branding, colors, background styling, spacing, and typography of the original 1Fi Android application.
+* **Functional Navigation:** 
+  * Features a fully interactive bottom navigation bar with active state indicators and fallback "Coming Soon" screens for unrequired sections.
+  * Includes the required 3-way top tab switcher (**Top Brands**, **Nearby Stores**, and **1Fi Marketplace**).
+* **Dynamic Product Catalog:** 
+  * Product details, images, available color finishes, and mutual-fund-backed EMI plans are fetched dynamically from a mock data service (`src/data/marketplaceData.js`).
+  * Includes a live, real-time search bar filter on the main listing view.
+* **Advanced Detail & EMI Flow:** 
+  * Selecting a product opens a detailed view with RAM/Storage variant buttons that **dynamically recalculate** prices and monthly EMI installments.
+  * Interactive color finish selectors and selectable EMI tenure plans with zero-cost interest indicators and cashback highlights.
+  * Confirmation checkout modal workflow upon clicking the CTA button.
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+---
+
+## 🛠️ Local Setup & Installation
+
+To run this project locally on your machine:
+
+1. **Clone the repository**
+   ```
+   git clone [https://github.com/gowtham1-dev/1fi-marketplace-assessment.git](https://github.com/gowtham1-dev/1fi-marketplace-assessment.git)
+   cd 1fi-marketplace-assessment
+   ```
+
+2. **Install dependencies**
+
+    ` npm install `
+
+3. **Start the development server**
+
+   ` npm run dev`
+
+4. **Open in browser**
+    Navigate to http://localhost:5173 (Best viewed using mobile responsive dimensions/device toolbar).
+
+   
